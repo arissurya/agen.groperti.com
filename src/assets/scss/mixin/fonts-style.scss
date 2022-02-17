@@ -1,0 +1,15 @@
+@use '../variables/fonts';
+
+@mixin font-mulish($size : 1em, $bold : 500, $spacing: 2) {
+    font-family: fonts.$fontMulish;
+    font-size: $size;
+    letter-spacing: $spacing;
+    font-weight: $bold;
+}
+
+@mixin font-ssp($size : 1em, $bold : 500, $spacing: 2) {
+    font-family: fonts.$fontSSP;
+    font-size: $size;
+    letter-spacing: $spacing;
+    font-weight: $bold;
+}

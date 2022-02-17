@@ -1,0 +1,175 @@
+@use '../breakpoints/breakpoints.scss';
+@use '../variables/colors';
+@use '../variables/fonts';
+@use '../mixin/fonts-style.scss';
+
+// footer 
+
+@mixin container-custom-wrap {
+    @include breakpoints.media('<=phone') {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @include breakpoints.media('>phone', '<=tablet') {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    @include breakpoints.media('>tablet', '<=desktop') {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include breakpoints.media('>desktop') {
+        padding-left: 49px;
+        padding-right: 49px;
+    }
+}
+.footer-container {
+    padding-top: 80px;
+    padding-bottom: 50px;
+        .container-content {
+            display: flex;
+            justify-content: space-between;
+            .left-content {
+                h1 {
+                    @include fonts-style.font-mulish(32px,700,1px);
+                    color: colors.$whiteMain;
+                }
+                img {
+                    width: 100px;
+                }
+                p {
+                    @include fonts-style.font-mulish(16px,300,1px);
+                    color: colors.$whiteMain;
+                    padding-top: 15px;
+                    padding-left: 5px;
+                    width: 65%;
+                    text-align: justify
+                }
+                @include breakpoints.media('<phone') {
+                    p {
+                        @include fonts-style.font-mulish(14px,300,1px);
+                        color: colors.$whiteMain;
+                        padding-top: 15px;
+                        padding-left: 5px;
+                        width: 100%;
+                    }
+                }
+                @include breakpoints.media('>phone', '<=tablet') {
+                    p {
+                        @include fonts-style.font-mulish(14px,300,1px);
+                        color: colors.$whiteMain;
+                        padding-top: 15px;
+                        padding-left: 5px;
+                        width: 100%;
+                    }
+                }
+                @include breakpoints.media('>tablet', '<=desktop') {
+                    p {
+                        @include fonts-style.font-mulish(14px,300,1px);
+                        color: colors.$whiteMain;
+                        padding-top: 15px;
+                        padding-left: 5px;
+                        width: 80%;
+                    }
+                }
+            }
+            .socmed-content {
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                // border: 1px solid red;
+                h6 {
+                    @include fonts-style.font-mulish(18px,700,1px);
+                    color: colors.$whiteMain;
+                    padding-top: 10px;
+                    padding-left: 5px;
+                    padding-bottom: 10px;
+                }
+                ul {
+                    display: flex;
+                    list-style: none;
+                    padding-left: 5px;
+                    li {
+                        padding-right: 20px;
+                        color: #fff;
+                        .icon {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .right-content-one {
+                display: flex;
+                flex-direction: column;
+                h6 {
+                    @include fonts-style.font-mulish(22px,700,1px);
+                    color: colors.$whiteMain;
+                    padding-top: 10px;
+                    padding-left: 5px;
+                    padding-bottom: 10px;
+                }
+                p {
+                    @include fonts-style.font-mulish(15px,500,1px);
+                    color: #edeced;
+                    padding-left: 5px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                
+            }
+            .right-content-two {
+                display: flex;
+                flex-direction: column;
+                h6 {
+                    @include fonts-style.font-mulish(22px,700,1px);
+                    color: colors.$whiteMain;
+                    padding-top: 10px;
+                    padding-left: 5px;
+                    padding-bottom: 10px;
+                }
+                p {
+                    @include fonts-style.font-mulish(15px,500,1px);
+                    color: #edeced;
+                    padding-left: 5px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                
+            }
+        }
+        .copyright {
+            padding-top: 50px;
+            span {
+                @include fonts-style.font-ssp(15px,300,1px);
+                color: colors.$whiteMain;
+                padding-top: 15px;
+                padding-left: 5px;   
+                a {
+                    font-weight: 500;
+                }             
+            }
+            @include breakpoints.media('<phone') {
+                span {
+                    @include fonts-style.font-mulish(10px,300,1px);
+                    color: colors.$whiteMain;
+                    padding-top: 15px;
+                    padding-left: 5px;   
+                    a {
+                        font-weight: 500;
+                    }             
+                }
+            }
+            @include breakpoints.media('>phone', '<=tablet') {
+                span {
+                    @include fonts-style.font-mulish(11px,300,1px);
+                    color: colors.$whiteMain;
+                    padding-top: 15px;
+                    padding-left: 5px;   
+                    a {
+                        font-weight: 500;
+                    }             
+                }
+            }
+        }
+}

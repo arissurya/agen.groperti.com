@@ -1,0 +1,112 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.global-container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-height {
+    margin-top: 20px;
+    padding-top: 40px;
+    min-height: 76vh;
+    margin-bottom: 50px;
+    h1 {
+        color: #0091d6;
+    }
+}
+
+.container-footer {
+    width: 100%;
+}
+
+.copyright-text {
+    text-align: center;
+    color: #092c4c;
+}
+
+.error-p {
+    color: #d43232;
+    padding-left: 5px;
+    padding-top: 0px;
+    font-size: 13px;
+}
+
+.box-modal-create {
+    min-height: 500px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.box-modal-modules {
+    min-height: 500px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+#select-style-cat {
+    z-index: 50 !important;
+}
+
+#select-style-type {
+    z-index: 40 !important;
+}
+
+#select-style-province {
+    z-index: 30 !important;
+}
+
+#select-style-city {
+    z-index: 20 !important;
+}
+
+#select-style-district {
+    z-index: 10 !important;
+}
+
+#select-style-cat-product-1 {
+    z-index: 50 !important;
+}
+#select-style-cat-product-2 {
+    z-index: 49 !important;
+}
+#select-style-cat-product-3 {
+    z-index: 48 !important;
+}
+#select-style-cat-product-4 {
+    z-index: 47 !important;
+}
+#select-style-cat-product-5 {
+    z-index: 46 !important;
+}
+#select-style-cat-product-6 {
+    z-index: 45 !important;
+}
+
+#select-style-brand-product {
+    z-index: 40 !important;
+}
+
+#select-style-mes-product {
+    z-index: 30 !important;
+}
+
+#select-style-warehouse-product {
+    z-index: 20 !important;
+}
+
+#select-roles {
+    z-index: 10 !important;
+}
