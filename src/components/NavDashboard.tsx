@@ -21,6 +21,7 @@ import Box from '@mui/material/Box';
 import { userCredentials } from '../utilities/config';
 import { Stack } from '@mui/material';
 import Feedback from './Feedback';
+import logo from '../assets/img/logo.png'
 
 const drawerWidth = 240;
 
@@ -135,16 +136,12 @@ const NavDashboard = (props: Props) => {
 
   const drawer = (
     <div>   
-        <Toolbar sx={{ backgroundColor: '#2d2a6d' }}>
-            <div className="logo-groperti">
-                <a href="/dashboard">
-                    {/* <img 
-                        alt="logo mpi dashboard" 
-                        src={logo}
-                    /> */}
-                    Groperti.com 
+        <Toolbar sx={{ backgroundColor: '#2d2a6d' }}> 
+            <div className='logo-groperti'>
+                <a href="/">
+                    <img src={logo} alt="logo" />
                 </a>
-            </div>
+            </div> 
         </Toolbar>
         <Divider />
 

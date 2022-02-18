@@ -11,21 +11,21 @@ function HomeDashboard() {
     return (
         <Box sx={{pl:3, pr:3, pt:2}}>
            <h2>Selamat datang kembali, {username}</h2>
-           <Box fontWeight="400">Kamu login sebagai Agent Properti</Box>
+           <Box fontWeight="400">Kamu login sebagai Agen Properti</Box>
 
             <Stack sx={{pt:3}} >
                 <Grid container spacing={3}>
                     <Grid item xl={3} lg={3} sm={6} xs={12}>
                         <CardStatistic 
                             label="Properti Terdaftar"
-                            value={15}
+                            value={0}
                             currency={false}
                             background="#f7f7f7"
                         />
                     </Grid>
                     <Grid item xl={3} lg={3} sm={6} xs={12}>
                         <CardStatistic 
-                            label="Properti Dalam Proses"
+                            label="Properti Menunggu Persetujuan"
                             value={5}
                             currency={false}
                             background="#f7f7f7"
@@ -34,19 +34,19 @@ function HomeDashboard() {
                     <Grid item xl={3} lg={3} sm={6} xs={12}>
                         <CardStatistic 
                             label="Properti Terjual"
-                            value={2}
+                            value={0}
                             currency={false}
                             background="#f7f7f7"
                         />
                     </Grid>
-                    <Grid item xl={3} lg={3} sm={6} xs={12}>
+                    {/* <Grid item xl={3} lg={3} sm={6} xs={12}>
                         <CardStatistic 
                             label="Fee Keuntungan"
-                            value={25000000}
+                            value={0}
                             currency={true}
                             background="#f7f7f7"
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
             </Stack>
 

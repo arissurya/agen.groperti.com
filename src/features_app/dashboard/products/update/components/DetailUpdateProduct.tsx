@@ -227,13 +227,13 @@ const DetailUpdateProduct : React.FC<any> = ({ dataproduct }) => {
     }
 
     useEffect(() => {
-        if(store_product.success_create) {
+        if(store_product.success_update) {
             setTimeout(() => {
                 window.location.href = "/dashboard/products"
             }, 1000);
         }
         // eslint-disable-next-line
-    }, [store_product.success_create]);
+    }, [store_product.success_update]);
 
     // const proceedOptions = (data : any) => {
     //     let data_options = []
@@ -524,8 +524,8 @@ const DetailUpdateProduct : React.FC<any> = ({ dataproduct }) => {
                         >
                           Reset Field
                         </Button>
-                        <Button variant='contained' color="primary" type="submit" disabled={store_product.loading_create ? true : false}>
-                           { store_product.loading_create ? <span>Loading.. <CircularProgress color='inherit' size={20}/></span> : "Edit Property" } 
+                        <Button variant='contained' color="primary" type="submit" disabled={store_product.loading_update ? true : false}>
+                           { store_product.loading_update ? <span>Loading.. <CircularProgress color='inherit' size={20}/></span> : "Edit Property" } 
                         </Button>
                     </Stack>
                 </Stack>

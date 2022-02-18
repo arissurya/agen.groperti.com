@@ -3,6 +3,7 @@ import ButtonContained from '../../../components/ButtonContained'
 import ButtonOutlined from '../../../components/ButtonOutlined'
 import ButtonMenu from '../../../components/ButtonMenu';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../../../assets/img/logo.png'
 
 function NavbarApp() {
     const location = useLocation()
@@ -12,11 +13,11 @@ function NavbarApp() {
     return (
         <Stack pt={1} pb={1}>
             <Stack flexDirection="row" justifyContent="space-between">
-                <a href="/">
-                <Stack color="#fff" fontSize={31} fontWeight={500}>
-                    Groperti.com
-                </Stack>
-                </a>
+                <div className='logo-groperti'>
+                    <a href="/">
+                        <img src={logo} alt="logo" />
+                    </a>
+               </div> 
                 <Stack flexDirection="row" justifyContent='space-between'>
                     { login === '/' ?
                     <Box>
@@ -47,21 +48,21 @@ function NavbarApp() {
                     size="14"
                     color="#fff"
                     contrast="#fff"
-                    to="/calculator"
+                    href="https:/groperti.com/calculator"
                 />
                 <ButtonMenu 
                     name="Tentang Kami" 
                     size="14"
                     color="#fff"
                     contrast="#fff"
-                    to="/about-us"
+                    href="https:/groperti.com/about-us"
                 />
                 <ButtonMenu 
                     name="Pusat Bantuan" 
                     size="14"
                     color="#fff"
                     contrast="#fff"
-                    to="/faq"
+                    href="https:/groperti.com/faq"
                 />
                 <ButtonMenu 
                     name="Blog" 

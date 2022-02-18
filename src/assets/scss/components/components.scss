@@ -1,0 +1,94 @@
+@use '../breakpoints/breakpoints.scss';
+@use '../variables/colors';
+@use '../variables/fonts';
+@use '../mixin/fonts-style.scss';
+
+@include breakpoints.media('<=phone') {
+    .logo-groperti > a {
+        img {
+            width: 100px;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@include breakpoints.media('>phone', '<=599px') {
+    .logo-groperti > a {
+        img {
+            width: 120px;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .logo-groperti-footer > a {
+        img {
+            width: 120px;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@include breakpoints.media('>=600px', '<=tablet') {
+    .logo-groperti > a {
+        img {
+            width: 150px;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .logo-groperti-footer > a {
+        img {
+            width: 120px;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+@include breakpoints.media('>tablet', '<=desktop') {
+    .logo-groperti > a {
+        img {
+            width: 150px;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .logo-groperti-footer > a {
+        img {
+            width: 120px;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@include breakpoints.media('>desktop') {
+    
+    .logo-groperti > a {
+        img {
+            width: 150px;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+   
+}

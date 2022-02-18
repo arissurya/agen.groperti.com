@@ -246,10 +246,10 @@ const CreateNewProducts = () => {
     //     // eslint-disable-next-line
     // }, [store_product.tax]);
 
-    useEffect(() => {
-        dispatch(getMasterTax())
-        // eslint-disable-next-line
-    }, []);
+    // useEffect(() => {
+    //     dispatch(getMasterTax())
+    //     // eslint-disable-next-line
+    // }, []);
 
     const resetAllField = () => {
         window.location.reload()
