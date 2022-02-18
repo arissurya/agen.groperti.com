@@ -43,7 +43,7 @@ function NavbarApp() {
                 </Stack>
             </Stack>
             <Stack flexDirection="row" sx={{ mt: 2 }}>
-                <ButtonMenu 
+                {/* <ButtonMenu 
                     name="Kalkulator KPR" 
                     size="14"
                     color="#fff"
@@ -56,7 +56,7 @@ function NavbarApp() {
                     color="#fff"
                     contrast="#fff"
                     href="https:/groperti.com/about-us"
-                />
+                /> */}
                 <ButtonMenu 
                     name="Pusat Bantuan" 
                     size="14"
